@@ -1,0 +1,41 @@
+body{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+fieldset{
+    background-color: #faf6ed;
+    color: #031b2b;
+    font-size: 25px;
+    font-weight: 400;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.button{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.button input{
+    background-color: #c4a9ee;
+    color: black;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.button input:hover {opacity: 10}
+
+input{
+    font-size: 20px;
+}
