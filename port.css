@@ -87,7 +87,6 @@
     height: 100px;
     display: flex;
     padding: var(--dl-space-space-twounits);
-    /* max-width: var(--dl-size-size-maxwidth); */
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
@@ -155,15 +154,14 @@
   .home-image1 {
     width: 500px;
     object-fit: cover;
-    /* padding-top: 90px; */
   }
   .home-container2 {
     width: auto;
     display: flex;
-    margin-left: 1px;
+    margin-left: 48px;
     margin-bottom: 6px;
-
     flex-direction: column;
+    font-size: 20px;
   }
   .home-text01 {
     font-size: 3rem;
@@ -183,6 +181,29 @@
     margin-bottom: 1px;
     padding-right: 2px;
   }
+  .resume{
+    margin-top: 5%;
+    width: 25%;
+    height: 40px;
+    background-color: #DD4A48;
+    border: 1px solid #DD4A48;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  .resume a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .resume:hover {
+    background-color: #fff;
+    border: 1px solid #DD4A48;
+    color: black;
+  }
+  .resume a:hover {
+    color: black;
+  }
+
 
 
   /* skill */
@@ -195,14 +216,13 @@
   }
   .home-skill {
     font-size: 40px;
-    /* margin-bottom: 32px; */
   }
   .home-container3 {
     display: grid;
     row-gap: 20px;
     column-gap: 10px;
     grid-template-columns: auto auto auto;
-  padding: 10px;
+    padding: 10px;
 
   }
   .boxskill1{
@@ -220,6 +240,37 @@
     padding: 15px;
     width: 240px;
     text-align: center;
+    box-shadow: 0px 0px 10px 1px #b0b0b0;
+  }
+
+
+  /* experience */
+  .grid-experience {
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #F5EEDC;
+    margin-top: 10%;
+  }
+  
+  .experience {
+    grid-column: 2;
+    color: #DD4A48;
+    font-size: 14px;
+    letter-spacing: 1pt;
+    border: 0;
+    padding-top: 18%;
+    letter-spacing: 5px;
+    font-size: 35px;
+  
+  }
+  
+  .timeline {
+    grid-column: 3;
+    border-left: 4px solid #1F3044;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
   
   
@@ -232,6 +283,7 @@
     max-width: auto;
     position: relative;
     margin-top: 50px;
+    box-shadow: 0px 0px 10px 1px #b0b0b0;
   }
   #a3{
     vertical-align: middle;
@@ -389,9 +441,22 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .social-icon{
+    margin: 1rem;
+  }
   .home-ref{
     color: black;
+    align-items: center;
     text-decoration: none;
+  }
+  .home-ref a{
+    color: black;
+    text-decoration: none;
+  }
+  .home-credit{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -461,6 +526,7 @@
     .home-hero {
       padding-left: 1px;
       padding-right: 1px;
+      margin-bottom: 15%;
     }
     .home-image1 {
       width: 80%;
@@ -511,6 +577,7 @@
       padding-left: 1px;
       padding-right: 1px;
       padding-bottom: 2px;
+      margin-bottom: 10%;
     }
     .home-container2 {
       width: auto;
@@ -528,6 +595,16 @@
       padding-left: 1px;
       padding-right: 1px;
     }
+    .resume{
+      margin-top: 5%;
+      width: 40%;
+      height: 40px;
+      background-color: #DD4A48;
+      border: 1px solid #DD4A48;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 18px;
+    }
     .home-features {
       padding-top: 2px;
       padding-left: 1px;
@@ -541,6 +618,32 @@
     .allskill{
       display: flex;
       justify-content: center;
+    }
+    .grid-experience {
+      width: 100%;
+      height: 450px;
+      display: grid;
+      grid-template-columns: auto ;
+      margin-top: 20%;
+    }
+    .experience {
+      grid-column: 1;
+      color: #DD4A48;
+      font-size: 14px;
+      letter-spacing: 1pt;
+      border: 0;
+      padding: 0%;
+      letter-spacing: 5px;
+      font-size: 35px;
+      text-align: center;
+      
+    }
+    .timeline {
+      grid-column: 1;
+      border-left: 4px solid #1F3044;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin-left: 5px;
     }
     .allproject{
       display: flex;
@@ -584,13 +687,20 @@
     }
     .home-icon-group1 {
       margin-top: 20px;
-      margin-right: 320px;
+      margin-right: 260px;
+    }
+    .social-icon{
+      margin: 1rem;
     }
     .home-ref{
       color: black;
       align-self: flex-start;
-      margin-top: 10px;
-
+      margin-top: 16px;
+    }
+    .home-credit{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 3px;
     }
   }
   
